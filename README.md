@@ -28,4 +28,4 @@ Con un po' di fantasia inventiamo lo stile del nostro tabellone treni!
 Posso suggerire il font "Share Tech Mono"?
 
 # Risultato
-<img src="./risultato.png">
+<img src="./result/result.png">
