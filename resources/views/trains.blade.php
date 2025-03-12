@@ -58,20 +58,8 @@
                         <td>{{ $train->arrival_station }}</td>
                         <td>{{ $train->departure_time }}</td>
                         <td>{{ $train->arrival_time }}</td>
-                        <td>
-                            @if ($train->on_time === 1)
-                            Sì
-                            @elseif($train->on_time === 0)
-                            In ritardo
-                            @endif
-                        </td>
-                        <td>
-                            @if ($train->cancelled === 1)
-                            Cancellato
-                            @else
-                            -
-                            @endif
-                        </td>
+                        <td>{{ $train->on_time ? "Sì" : "In Ritardo" }}</td>
+                        <td>{{ $train->cancelled ? "Cancellato" : "-" }}</td>
                     </tr>
                     @endforeach
                 </tbody>

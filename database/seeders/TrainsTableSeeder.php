@@ -23,7 +23,7 @@ class TrainsTableSeeder extends Seeder
 
             // popolo i campi
             $newTrain->company = $faker->company();
-            $newTrain->train_code = $faker->numberBetween(1000, 9999);
+            $newTrain->train_code = strtoupper($faker->bothify("??####"));
             $newTrain->carriages = $faker->numberBetween(4, 10);
             $newTrain->departure_station = $faker->city();
             $newTrain->arrival_station = $faker->city();
