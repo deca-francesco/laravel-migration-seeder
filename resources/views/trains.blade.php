@@ -37,7 +37,7 @@
         <div class="container">
             <table class="table table-dark table-striped">
                 <thead>
-                    <tr class="table-primary">
+                    <tr class="table-black">
                         <th scope="col">Azienda</th>
                         <th scope="col">Codice treno</th>
                         <th scope="col">Vagoni</th>
@@ -75,7 +75,6 @@
                         </td>
                     </tr>
                     @endforeach
-
                 </tbody>
             </table>
         </div>
